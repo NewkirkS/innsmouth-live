@@ -5,6 +5,7 @@
       {{#link-to 'post' post.id}}<p><img src={{post.picture}} alt={{post.title}}></p>{{/link-to}}
       <p class='date'>{{post.date}}</p>
       <p class='content'>{{post.content}}</p>
+      <p>{{post.comment.length}}</p>
       {{#link-to 'post' post.id}}Add a comment{{/link-to}}
       <hr>
     {{/each}}
